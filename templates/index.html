@@ -47,10 +47,10 @@
       </div>
       <div class="container">
         <div class="container">
-          <h2 class="titles"><span>Skills <button class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+          <h2 class="titles"><span>Skills <button @click="skills()" type="button" class="btn btn-dark"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
           </svg></button></span></h2>
-          <div class="container">
+          <div v-if="showSkills" class="container">
             <div class="row">
               {% for skill in skills %}
               <div class="col" style="min-width: 28em;">
@@ -71,12 +71,12 @@
     <div class="illustration" id="illustration">
       <div class="container">
         <h1 class="titles">
-          <span>Illustration <button class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+          <span>Illustration <button @click="gallery()" type="button" class="btn btn-dark"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
           </svg></button></span>
         </h1>
       </div>
-      <div class="container">
+      <div v-if="showGallery" class="container">
         <!-- Gallery -->
         <div class="row">
           <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
@@ -176,10 +176,13 @@
     <div class="comics">
       <div class="container">
         <h1 class="titles">
-          <span>Comics <button class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+          <span>Comics <button @click="comics()" type="button" class="btn btn-dark"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
           </svg></button></span>
         </h1>
+      </div>
+      <div v-if="showcomics" class="container">
+        ......
       </div>
     </div>
 

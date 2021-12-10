@@ -23,8 +23,7 @@ body{
     font-size: 1.5em;
 }
 .nav-menu a:hover{
-    color: rgb(199, 199, 199);
-    border-bottom: solid 2px rgb(199, 199, 199);
+    color: rgb(150, 150, 150);
 }
 .titles{
     color: white;
@@ -37,4 +36,20 @@ body{
 
 .arrow{
     background-color: transparent;
+}
+
+.extra a{
+    color: white;
+}
+
+.extra a:hover{
+    color: gray;
+}
+
+.col card{
+    box-shadow: 2em white;
+}
+
+.card-body button{
+    text-decoration: none;
 }

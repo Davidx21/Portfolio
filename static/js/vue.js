@@ -5,10 +5,10 @@ var vueApp = new Vue({
     data:{
         name: "David A. Vargas",
         navMenu: {
-            "About Me":"#ilustration",
-            "Ilustration":"#ilustration",
-            "Web Development":"#ilustration",
-            "Comics":"#ilustration",
+            "About":"#aboutMe",
+            "Projects":"#projects",
+            "Art":"#art",
+            "Contact":"#contact",
         },
         showSkills: false,
         showGallery: false,

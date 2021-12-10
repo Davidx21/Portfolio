@@ -15,7 +15,14 @@ class Skills(models.Model):
     class Meta:
         verbose_name_plural = "Skills"
 
-class Web(models.Model):
+class Experience(models.Model):
+    position = models.CharField(max_length = 300)
+    start_date = models.DateField()
+    end_date = models.DateField()
+    company = models.CharField(max_length = 300)
+    description = models.CharField(max_length = 500)
+
+class Project(models.Model):
     name = models.CharField(max_length = 300)
     presentation = models.CharField(max_length = 500)
     skills = models.ManyToManyField(Skills)
@@ -30,9 +37,9 @@ class Web(models.Model):
         return (str(self.name))
     
     class Meta:
-        verbose_name_plural = "Web Projects"
+        verbose_name_plural = "Projects"
 
-class Illustration(models.Model):
+class Art(models.Model):
     name =  models.CharField(max_length = 300)
     image = models.ImageField(upload_to="static/images")
     date = models.DateField()

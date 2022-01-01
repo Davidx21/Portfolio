@@ -45,13 +45,3 @@ class Art(models.Model):
     date = models.DateField()
     def __str__(self):
         return (str(self.name))
-
-class Comic(models.Model):
-    name = models.CharField(max_length = 300)
-    image = models.ImageField(upload_to="static/images")
-    image1 = models.ImageField(upload_to="static/images")
-    image2 = models.ImageField(upload_to="static/images")
-    image3 = models.ImageField(upload_to="static/images")
-    date = models.DateField()
-    def __str__(self):
-        return (str(self.name))

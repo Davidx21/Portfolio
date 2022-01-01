@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>David A. Vargas</title>
+{% endblock %}
+
+{% block content %}
+<div class="container" id="contactContainer">
+    <h1 class="titles">
+      <span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span>
+      <span>m</span><span>e</span>
+    </h1>
+    <div class="container">
+      <p class ="description">
+        I’m interested in freelance opportunities – especially ambitious or large projects. However, 
+        if you have other request or question, don’t hesitate to use the form.
+      </p>
+    </div>
+
+    <div class="container">
+      <form action="">
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" id="nombrecontacto" placeholder="Name" name="nombre">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" id="nombrecontacto" placeholder="Email" name="nombre">
+          </div>
+        </div>
+        <div class="mb-3">
+          
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control" id="nombrecontacto" placeholder="Subject" name="nombre">
+        </div>
+        <div class="mb-3">
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Message" id="floatingMessage"></textarea>
+            <label for="floatingTextarea">Message</label>
+          </div>
+        </div>
+        <div class="mb-3">
+          <button type="submit" class="blueBtn">Enviar</button>
+        </div>
+      </form>
+    </div>
+
+</div>
+{% endblock %}
